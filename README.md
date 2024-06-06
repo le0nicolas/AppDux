@@ -14,4 +14,5 @@ Para ejecutar la aplicación, sigue estos pasos:
 
 ### Construcción de la Imagen Docker
 docker build -t appdux .
+
 docker run -p 8080:8080 appdux
