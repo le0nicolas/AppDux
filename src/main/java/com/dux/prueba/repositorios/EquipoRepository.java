@@ -1,0 +1,14 @@
+package com.dux.prueba.repositorios;
+
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.dux.prueba.dominios.Equipo;
+
+@Repository
+public interface EquipoRepository extends JpaRepository<Equipo, Long> {
+	List<Equipo> findByNombreContainingIgnoreCase(String nombre);
+}
